@@ -3,6 +3,8 @@
     --text_color: #41251f;
     /*--resume_button_color: #356ea1;
     --resume_button_color_hover: #011221;*/
+
+    position: relative;
 }
 
 *{
@@ -15,25 +17,16 @@ html{
 
 body{
   font-family: "MedievalSharp", cursive;
-  /* font-size: 1.75rem; */
-  /* line-height: 1.5; */
+
   background-color: var(--background);
   color: var(--text_color);
-
+  
   margin: 0 auto;
   max-width: 100em;
   padding: 1em 0;
 
-  position: relative;
-  
-
-  /* min-height:100vh;
-  display: flex;
-  flex-direction: column; */
-
-  /*hide the scroll bar, might be needed later*/
-  /* overflow-y: hidden; */
 }
+
 
 h1{
   text-align: center;
@@ -91,6 +84,29 @@ ul {
     }
     
   }
+}
+
+#clothiers {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+#clothiers td, #clothiers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#clothiers tr:nth-child(even){background-color: #f2f2f2;}
+
+#clothiers tr:hover {background-color: #ddd;}
+
+#clothiers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:  #8d6e63;
+  color: white;
 }
 
 img {
